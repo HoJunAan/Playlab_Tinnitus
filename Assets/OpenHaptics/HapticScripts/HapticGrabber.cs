@@ -100,8 +100,9 @@ public class HapticGrabber : MonoBehaviour
 		{
 			if (ButtonActsAsToggle)
 			{
-				//Do Nothing
-			} else
+                Hj_MainManager.Instance.On_grab_attract();
+                //Do Nothing
+            } else
 			{
 				release();
 			}
